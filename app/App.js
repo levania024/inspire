@@ -1,12 +1,14 @@
 import { AuthController } from './controllers/AuthController.js';
-import { InspireController } from './controllers/inspireController.js';
+import { ImagesController } from './controllers/ImagesController.js';
+import { QuotesController } from './controllers/QuotesController.js';
 import { router } from './router-config.js';
 const USE_ROUTER = false
 
 class App {
 
   AuthController = new AuthController()
-  InspireController = new InspireController()
+  ImagesController = new ImagesController()
+  QuotesController = new QuotesController()
 
   constructor() {
     if (USE_ROUTER) {
