@@ -19,8 +19,8 @@ export class QuotesController {
         }
     }
 
-    drawInspireQuote() {
-        const quote = AppState.quotes
-        setHTML('quote-of-the-day', quote.quoteHTMLTemplate)
-    }
+    // drawInspireQuote() {
+    //     const quote = AppState.quotes
+    //     setHTML('quote-of-the-day', quote.quoteHTMLTemplate)
+    // }
 }

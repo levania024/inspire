@@ -19,7 +19,6 @@ export class ImagesController {
     }
 
     drawInspireImage() {
-        console.log('load image to the page');
         const image = AppState.images
         document.body.style.backgroundImage = `url(${image.largeImgUrl})`
     }

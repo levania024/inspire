@@ -12,53 +12,68 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>inspire</title>
+  <title>Inspire</title>
 </head>
 
 <body>
   <!-- SECTION -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
-      <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ml-2">inspire</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- NAVLINKS -->
-          <!-- <a href="#/about" class="nav-link">About</a> -->
+    <section class="row">
+      <div class="col-12">
+        <div id="todo-for-the-day">
+          <!-- <div class="text-end m-3">
+            <button type="button" class="btn btn-primary">To Do List</button>
+          </div>
+
+          <div class="col-4">
+            <div class="d-flex align-items-end bg-secondary rounded">
+              <form action="">
+                <div class="m-3">
+                  <input type="text" name="" class="form-label rounded">
+                  <button type="button" class="btn btn-outline-primary"> + </button>
+                </div>
+
+                <div class="m-4">
+                  <input type="checkbox" name="" id="">
+                  <p>created to do list <i class="mdi mdi-delete-forever-outline fs-4" role="button"></i></p>
+                </div>
+              </form>
+            </div>
+          </div> -->
         </div>
       </div>
-      <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
-    </nav>
+    </section>
   </header>
 
   <!-- SECTION -->
   <main class="container-fluid">
 
-    <div class="container d-flex align-items-center">
-      <section class="row justify-content-center">
-        <div id="quote-of-the-day" class="col-md-6">
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit illo animi numquam optio
-            blanditiis.</p>
-          <div class="text-end quote-author">
-            <p>author</p>
-          </div> -->
+    <section class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-end m-3">
+          <div id="quote-of-the-day">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, eum!</p>
+            <div class="text-end quote-author">
+              <p>${this.author}</p>
+            </div>
+          </div>
         </div>
-      </section>
+    </section>
     </div>
-
   </main>
 
   <!-- SECTION -->
-  <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
+  <footer>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light p-3 rounded">
+      <div id="weather-of-the-day">
+        <!-- <button class="weather" type="button" data-toggle="weather" data-target="#navbarNavAltMarkup">
+          <p class="">temp</p>
+          <i class="mdi mdi-weather-sunny fs-2 text-end"></i>
+          <p>sunny</p>
+        </button> -->
+      </div>
+      <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
+    </nav>
     </div>
   </footer>
 

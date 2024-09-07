@@ -13,6 +13,12 @@ class ObservableAppState extends EventEmitter {
 
   /**@type {Inspire} */
   quotes = null
+
+  /**@type {Inspire} */
+  weather = null
+
+  /**@type {Inspire} */
+  todo = null
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
