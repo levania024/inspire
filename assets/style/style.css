@@ -10,18 +10,48 @@
   height: 64px;
 }
 
-.quote-author:hover {
-  opacity: unset;
-}
-
-
 body {
   background-size: cover;
-  color: white;
+  color: whitesmoke;
 }
 
-form {
-  height: 20rem;
-  width: 50%;
-  border-radius: 3px;
+.quote-container {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.quote-text {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.quote-author {
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 2s ease;
+  background-color: rgba(0, 0, 0, 0.039);
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.quote-container:hover .quote-author {
+  opacity: 1;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.456);
 }
